@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title> Growth manager </title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/8d06dd7d8d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1 class="heading">Growth Manager</h1>
+  <button type="button" class="button" onclick="slider1()">Get Starterd</button>
+
+
+
+
+  <div class="slidecontainer" id="s1" style="visibility: hidden;">
+    <h3>Overall Growth</h3>
+    <div id="firstslider">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <p>Value: <span id="demo"></span></p>
+    </div>
+
+
+    <h4 class="Physical Health"> Health</h4>
+    <!-- <div class="slidecontainer"> -->
+    <div class="secondslider">
+      <input type="range" min="1" max="100" value="50" class="slider" id="mynewRange">
+      <p>Value: <span id="newdemo"></span></p>
+
+
+
+
+    </div>
+    <h4 class="mentalhealth"> Mental Health</h4>
+    <div class="thirdslider">
+      <input type="range" min="1" max="100" value="50" class="slider" id="thirdRange">
+      <p>Value: <span id="thirddemo"></span></p>
+    </div>
+
+
+
+    <div class="fouthslider" id="add" style="visibility: hidden;">
+      <h4 class="Finance" id="title"> Finance</h4>
+      <div class="fouthslider1">
+        <input type="range" min="1" max="100" class="slider" id="fouthRange">
+        <p>Value: <span id="fouthdemo"></span></p>
+      </div>
+    </div>
+    <a class="secondbutton" onclick="add()"><i class="far fa-plus-square"></i></a>
+
+
+    <div class="form1" id="form1" style="visibility: hidden;">
+      <form>
+        <label>Enter Task</label>
+        <input id="task" type="text" placeholder="Eg. Studies">
+        <label>Value</label>
+        <input id="value2" type="text" placeholder="Eg. 50">
+
+        <center><input type="button" id="create" onclick="create()"> Create </center>
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
